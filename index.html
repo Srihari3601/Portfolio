@@ -7,18 +7,23 @@
   <link rel="icon" href="/Components/portfolio_favicon.jpg" type="image/png">
   <link rel="stylesheet" href="input.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preload" href="./Components/FallingAstronaut.gif" as="image">
   <title>Srihari</title>
 </head>
 <body class="bg-gray-900 flex items-center justify-center min-h-screen relative">
 
-  <!-- <div class="astronaut-animation">
-    <img src="./Components/FallingAstronaut.gif">
-  </div> -->
+  <div class="loading-screen">
+    <img src="./Components/FallingAstronaut.gif" alt="Loading...">
+  </div>
   
-  <div class="text-center gradient-border">
-    <img src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif" class="absolute left-24" alt="Computer man" style="width:60px;height:60px;">
+  <div class="text-center gradient-border max-md:mx-3">
+    <img src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif" class="absolute left-24 max-md:hidden" alt="Computer man" style="width:60px;height:60px;">
 
     <h1 class="text-5xl md:text-7xl font-bold text-white">Hey there</h1>
     <div class="">
@@ -30,7 +35,7 @@
   <!-- Corner Links and Sections -->
   <a href="#" class="corner-link skills-link pb-4">
     Skills
-    <span class="rotate-">&#9662;</span> <!-- Downward arrow -->
+    <!-- <span class="rotate-">&#9662;</span>  -->
   </a>
   <div class="section skills-section top-16 left-0">
     <p class="my-3">Programming Languages</p>
@@ -79,7 +84,7 @@
 
   <a href="#" class="corner-link contact-link pb-4 pl-4">
     Contact
-    <span>&#9662;</span> <!-- Downward arrow -->
+    <!-- <span>&#9662;</span>  -->
   </a>
   <div class="section contact-section top-16 right-0">
     <a href="tel:+919840541098">📞 9840541098</a>
@@ -97,7 +102,7 @@
 
   <a href="#" class="corner-link experience-link  pt-4">
     Experience
-    <span>&#9650;</span> <!-- Downward arrow -->
+    <!-- <span>&#9650;</span> -->
   </a>
   <div class="section experience-section bottom-16 left-0">
     <img src="./Components/WIT_BIG.png" class="relative" alt="Wipro" style="width:58px;height:46px;">
@@ -123,7 +128,7 @@
 
   <a href="#" class="corner-link projects-link pl-4 pt-4">
     Projects
-    <span>&#9650;</span> <!-- Downward arrow -->
+    <!-- <span>&#9650;</span>  -->
   </a>
   <div class="section projects-section bottom-16 right-0 w-3/5">
     <h2 class="text-xl font-bold">🔗<a href="https://srihari3601.github.io/clickit-landing-page" target="_blank" class="text-blue-400 hover:underline">Click It Website</a></h2>
@@ -138,7 +143,6 @@
     </ul>
   </div>
 
-  <!-- Script to toggle sections on click -->
   <script src="./script.js">
   </script>
 

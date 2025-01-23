@@ -21,33 +21,43 @@ document.querySelectorAll('.corner-link').forEach(link => {
     }
   });
 
-  function createComet() {
-    const comet = document.createElement('div');
-    comet.classList.add('comet');
+  // function createComet() {
+  //   const comet = document.createElement('div');
+  //   comet.classList.add('comet');
   
-    // Random start position
-    comet.style.top = Math.random() * window.innerHeight + 'px';
-    comet.style.left = Math.random() * window.innerWidth + 'px';
+  //   // Random start position
+  //   comet.style.top = Math.random() * window.innerHeight + 'px';
+  //   comet.style.left = Math.random() * window.innerWidth + 'px';
   
-    document.body.appendChild(comet);
+  //   document.body.appendChild(comet);
   
-    // Random animation duration
-    const duration = Math.random() * 3 + 2;
+  //   // Random animation duration
+  //   const duration = Math.random() * 3 + 2;
   
-    // Apply animation with random duration and direction
-    comet.style.animation = `comet-move ${duration}s linear forwards`;
+  //   // Apply animation with random duration and direction
+  //   comet.style.animation = `comet-move ${duration}s linear forwards`;
   
-    // Remove comet after animation ends
-    comet.addEventListener('animationend', () => {
-      comet.remove();
-    });
-  }
+  //   // Remove comet after animation ends
+  //   comet.addEventListener('animationend', () => {
+  //     comet.remove();
+  //   });
+  // }
   
-  function generateComets() {
-    setInterval(createComet, 300); // Adjust interval for more/less frequent comets
-  }
+  // function generateComets() {
+  //   setInterval(createComet, 300); // Adjust interval for more/less frequent comets
+  // }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const loadingScreen = document.querySelector('.loading-screen');
+    const mainContent = document.querySelector('body'); // Replace with your actual main content selector
   
-  document.addEventListener('DOMContentLoaded', generateComets);
+    setTimeout(() => {
+      loadingScreen.classList.add('hidden');
+      mainContent.classList.add('fade-in'); // Add fade-in class to your content
+    }, 3350); // Adjust the timeout as needed
+  });
+  
+  // document.addEventListener('DOMContentLoaded', generateComets);
 
 const roles = ["Frontend Developer", "Software Engineer", "Web Developer"];
 let roleIndex = 0;
