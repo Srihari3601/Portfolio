@@ -58,7 +58,7 @@ document.querySelectorAll('.corner-link').forEach(link => {
     }, 3350); // Adjust the timeout as needed
   });
 
-const roles = ["Frontend Developer", "Software Engineer", "Web Developer"];
+const roles = ["<Frontend Developer/>", "<Software Engineer/>", "<Web Developer/>"];
 let roleIndex = 0;
 let charIndex = 0;
 const typingSpeed = 150; // Speed of typing
