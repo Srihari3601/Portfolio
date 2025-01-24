@@ -46,6 +46,7 @@ document.querySelectorAll('.corner-link').forEach(link => {
   // function generateComets() {
   //   setInterval(createComet, 300); // Adjust interval for more/less frequent comets
   // }
+  // document.addEventListener('DOMContentLoaded', generateComets);
 
   document.addEventListener("DOMContentLoaded", function() {
     const loadingScreen = document.querySelector('.loading-screen');
@@ -56,8 +57,6 @@ document.querySelectorAll('.corner-link').forEach(link => {
       mainContent.classList.add('fade-in'); // Add fade-in class to your content
     }, 3350); // Adjust the timeout as needed
   });
-  
-  // document.addEventListener('DOMContentLoaded', generateComets);
 
 const roles = ["Frontend Developer", "Software Engineer", "Web Developer"];
 let roleIndex = 0;

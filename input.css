@@ -18,8 +18,8 @@ body {
     position: relative;
   }
 
-  .fade-in {
-    animation: fadeIn 5s; /* Adjust the duration as needed */
+  /* .fade-in {
+    animation: fadeIn 5s;
   }
   
   @keyframes fadeIn {
@@ -29,8 +29,8 @@ body {
     to {
       opacity: 1;
     }
-  }
-
+  } */
+  
   .loading-screen {
     position: fixed;
     top: 0;
@@ -76,7 +76,34 @@ body {
     bottom: 0;
     z-index: -1; /* Ensure it stays behind all content */
     pointer-events: none; /* Allow interaction with elements behind */
+    animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s;
   }
+
+  
+  
+  /* Comet styling */
+  /* .comet {
+    position: absolute;
+    width: 2px;
+    height: 80px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.808), transparent);
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+  } */
+  
+  /* Comet animation */
+  /* @keyframes comet-move {
+    from {
+      transform: translateX(0) translateY(0) rotate(-60deg);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100vw) translateY(100vh) rotate(-60deg);
+      opacity: 0;
+    }
+  } */
 
   .astronaut-animation {
     position: absolute;
@@ -103,11 +130,20 @@ body {
       opacity: 0;
     } 
    } 
+
+   .heading {
+    color: #E3DC95;
+   }
+
+   .name {
+    color: #ffffff;
+   }
+
 .gradient-border {
   position: relative;
   padding: 2rem;
   border: 4px solid transparent;
-  border-image: linear-gradient(45deg, #FFD700, #FF8C00) 1;
+  /* border-image: linear-gradient(45deg, #01ff95, #00ffea) 0.5; */
   border-radius: 0;
   opacity: 0;
   animation: fadeIn 5s forwards;
@@ -124,14 +160,16 @@ body {
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
-  margin: 0 auto;
+  color: #DFFF00;
+  font-family: Courier, monospace;
+  margin: 10px auto;
   letter-spacing: .15em;
   animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: fit-content }
 }
 
 @keyframes blink-caret {
@@ -141,9 +179,12 @@ body {
 
 .corner-link {
     position: absolute;
+    font-size: larger;
+    font-weight:400;
     width: 115px;
     height: 100px;
-    background-color: white;
+    background-color: #E3DCC2;
+    font-family: Garamond, serif;
     color: rgb(19, 19, 19);
     display: flex;
     align-items: center;
